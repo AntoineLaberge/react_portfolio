@@ -1,20 +1,27 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "../css/customButton.css"
+import { Button } from "react-bootstrap";
 
 interface Props {
     text: React.ReactNode;
-    onClick: () => void;
+    onClick?: () => void;
+    className?: string;
+    style?: React.CSSProperties;
   }
   
 const BlueButton: React.FC<Props> = ({ 
       text,
-      onClick
+      onClick,
+      className,
+      style
     }) => { 
     return (
       <Button 
-        variant="outline-primary"
-        style={{}}
-        onClick={onClick}>
+        variant="primary"
+        onClick={onClick}
+        className= {`rounded-pill ${className}`}
+        style={style}>
         {text}
         </Button>
     );

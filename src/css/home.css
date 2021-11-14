@@ -1,0 +1,58 @@
+.primary-color {
+  color: #2196f3;
+}
+
+.div-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.skillCard {
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projectCard {
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  min-width: 30%;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
+
+.projectCard:hover .overlay {
+  opacity: 1;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: fit-content;
+  background-color: #2196f3;
+  color: white;
+  text-align: center;
+}

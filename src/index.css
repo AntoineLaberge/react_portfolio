@@ -1,13 +1,18 @@
+@font-face {
+  font-family: "panton";
+  src: local("MyFont"), url(./fonts/PantonRustHeavy-GrSh.woff) format("woff");
+}
+
+@font-face {
+  font-family: "pantonBold";
+  src: local("MyFont"), url(./fonts/PantonRustScrSmBold-Gr.woff) format("woff");
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "panton";
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
